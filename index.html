@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instituto Rafah | Saúde Integrativa, Longevidade e Bem-estar</title>
+    <meta name="description" content="Conheça o Instituto Rafah em São Mateus (ES), suas áreas de cuidado, localização e canais oficiais de contato.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#FDFBF7',
+                            100: '#FBF7EE',
+                            200: '#F5E8D0',
+                            300: '#EED6B0',
+                            400: '#E1B872',
+                            500: '#C5A059',
+                            600: '#B08A42',
+                            700: '#8C6A2E',
+                            800: '#684C21',
+                            900: '#3D2C12',
+                        },
+                        cream: {
+                            50: '#FCFBF9',
+                            100: '#FAF8F5',
+                            200: '#F4EFEA',
+                            300: '#EBE4DC',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Cormorant Garamond', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        :root { color-scheme: light; }
+        html { scroll-behavior: smooth; }
+        body {
+            background-color: #FAF8F5;
+            color: #3D2C12;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(225, 184, 114, 0.08) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(197, 160, 89, 0.08) 0%, transparent 40%);
+        }
+
+        /* Glassmorphism Card */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(225, 184, 114, 0.25);
+            box-shadow: 0 10px 30px -10px rgba(140, 106, 46, 0.08);
+        }
+
+        /* Golden Gradient Text */
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #B08A42 0%, #E1B872 50%, #8C6A2E 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Golden Gradient Button */
+        .btn-gold-primary {
+            background: linear-gradient(135deg, #C5A059 0%, #E1B872 50%, #B08A42 100%);
+            background-size: 200% auto;
+            transition: all 0.4s ease;
+            box-shadow: 0 8px 25px -5px rgba(197, 160, 89, 0.4);
+        }
+
+        .btn-gold-primary:hover {
+            background-position: right center;
+            box-shadow: 0 12px 30px -3px rgba(197, 160, 89, 0.5);
+            transform: translateY(-2px);
+        }
+
+        .btn-gold-secondary {
+            background: #FFFFFF;
+            border: 1px solid rgba(197, 160, 89, 0.35);
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+        }
+
+        .btn-gold-secondary:hover {
+            border-color: #C5A059;
+            background: rgba(251, 247, 238, 0.6);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(197, 160, 89, 0.15);
+        }
+
+        /* Subtle Shimmer Animation */
+        @keyframes shimmer {
+            0% { background-position: -200% 0; }
+            100% { background-position: 200% 0; }
+        }
+
+        .shimmer-badge {
+            background: linear-gradient(90deg, #FAF8F5 0%, #F5E8D0 50%, #FAF8F5 100%);
+            background-size: 200% 100%;
+            animation: shimmer 4s infinite linear;
+        }
+
+        /* Pulse glow for status dot */
+        @keyframes pulse-glow {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.6; transform: scale(1.15); }
+        }
+        .pulse-dot {
+            animation: pulse-glow 2s infinite ease-in-out;
+        }
+
+        /* Refinamento visual: editorial, leve e responsivo */
+        body {
+            padding-top: 30px;
+            padding-bottom: 30px;
+            background-image:
+                radial-gradient(ellipse at 8% 5%, rgba(225,184,114,.18), transparent 34%),
+                radial-gradient(ellipse at 94% 34%, rgba(197,160,89,.12), transparent 30%),
+                linear-gradient(180deg, #fcfaf6 0%, #f7f2e9 100%);
+        }
+        .site-layout { max-width: 1120px !important; gap: 22px !important; }
+        .glass-card {
+            background: rgba(255,255,255,.82);
+            border: 1px solid rgba(176,138,66,.20);
+            box-shadow: 0 18px 50px -32px rgba(79,57,25,.30), 0 3px 12px rgba(79,57,25,.035);
+            border-radius: 28px !important;
+            transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+        }
+        .glass-card:hover { border-color: rgba(176,138,66,.34); box-shadow: 0 22px 55px -30px rgba(79,57,25,.25); }
+        .hero-card { padding: clamp(28px, 5vw, 54px) !important; }
+        .hero-card::after {
+            content: ""; position: absolute; width: 260px; height: 260px; right: -110px; bottom: -150px;
+            border: 1px solid rgba(197,160,89,.22); border-radius: 50%; pointer-events: none;
+            box-shadow: 0 0 0 24px rgba(197,160,89,.035), 0 0 0 50px rgba(197,160,89,.025);
+        }
+        .logo-frame { width: 118px !important; height: 118px !important; padding: 4px !important; border-radius: 26px !important; }
+        .logo-frame > div { border-radius: 22px !important; }
+        .hero-title { font-size: clamp(2.6rem, 5vw, 4.1rem) !important; line-height: .98 !important; letter-spacing: -.035em !important; }
+        .hero-kicker { letter-spacing: .22em !important; font-size: 10px !important; }
+        .hero-intro { max-width: 610px; margin: 16px auto 0; color: #786a55; font-size: 14px; line-height: 1.9; }
+        .btn-gold-primary { background: linear-gradient(125deg, #9b7334 0%, #c5a059 46%, #dfbd7e 100%); box-shadow: 0 10px 24px -12px rgba(140,106,46,.75); }
+        .btn-gold-primary:hover { box-shadow: 0 15px 28px -12px rgba(140,106,46,.8); }
+        .btn-gold-secondary { border-color: rgba(176,138,66,.24); }
+        .action-card { min-height: 92px; }
+        .section-heading { margin-bottom: 8px; }
+        .service-grid { grid-template-columns: 1fr !important; }
+        .service-card { min-height: 76px; background: rgba(255,255,255,.72); border-color: #f1e7d5; padding: 14px !important; }
+        .service-card:hover { transform: translateY(-2px); background: #fff; box-shadow: 0 10px 24px -18px rgba(79,57,25,.4); }
+        .small-feature { min-height: 132px; display: flex; flex-direction: column; justify-content: center; }
+        .soft-label { display: inline-flex; align-items: center; gap: 8px; padding: 7px 12px; border: 1px solid rgba(197,160,89,.28); border-radius: 999px; background: rgba(255,255,255,.65); color: #8c6a2e; font-size: 10px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+        footer { max-width: 1120px !important; border-color: rgba(176,138,66,.2) !important; padding-top: 22px !important; }
+        @media (min-width: 760px) {
+            body { padding-left: 28px; padding-right: 28px; }
+            .site-layout { display: grid !important; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); align-items: stretch; }
+            .hero-card, .action-section, .services-section, .features-section { grid-column: 1 / -1; }
+            .hero-card { padding: 48px 60px !important; }
+            .action-section { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 14px; }
+            .action-card { height: 100%; padding: 18px !important; }
+            .services-section { padding: 30px !important; }
+            .service-grid { grid-template-columns: repeat(2, minmax(0,1fr)) !important; gap: 12px !important; }
+            .features-section { gap: 14px !important; }
+            .small-feature { min-height: 150px; }
+            .care-section, .location-section { height: 100%; }
+        }
+        @media (max-width: 420px) {
+            body { padding-left: 12px; padding-right: 12px; }
+            .hero-card { padding: 25px 18px !important; }
+            .hero-title { font-size: 2.55rem !important; }
+            .features-section { grid-template-columns: 1fr !important; }
+            .small-feature { min-height: auto; padding: 16px !important; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: .01ms !important; }
+        }
+    </style>
+</head>
+<body class="min-h-screen py-8 px-4 sm:px-6 flex flex-col justify-between items-center selection:bg-gold-200 selection:text-gold-900">
+
+    <!-- Container Principal (Mobile-First Max-Width) -->
+    <main class="site-layout w-full max-w-6xl mx-auto space-y-6">
+
+        <!-- CABEÇALHO / PROFILE SECTION -->
+        <header class="hero-card glass-card rounded-3xl p-6 sm:p-8 text-center relative overflow-hidden transition-all duration-300 hover:shadow-xl">
+            <!-- Background Decorative Glow -->
+            <div class="absolute -top-12 left-1/2 -translate-x-1/2 w-40 h-40 bg-gold-300/30 rounded-full blur-2xl pointer-events-none"></div>
+
+            <!-- Logo Container -->
+            <div class="relative inline-block mb-4">
+                <div class="logo-frame w-32 h-32 rounded-2xl p-1 bg-gradient-to-tr from-gold-600 via-gold-400 to-gold-200 shadow-xl shadow-gold-500/20 mx-auto">
+                    <div class="w-full h-full bg-gradient-to-br from-amber-400 via-amber-500 to-amber-600 rounded-[14px] flex items-center justify-center p-3 relative overflow-hidden">
+                        <img src="data:image/png;base64,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" alt="Logo do Instituto Rafah" class="w-full h-full object-contain rounded-xl drop-shadow-sm">
+                    </div>
+                </div>
+                <!-- Badge Atendimento Online/Presencial -->
+                <span class="absolute -bottom-2 left-1/2 -translate-x-1/2 bg-white/90 backdrop-blur-md text-gold-800 text-[10px] font-semibold tracking-wider uppercase py-1 px-3 rounded-full border border-gold-300 shadow-sm whitespace-nowrap flex items-center gap-1.5">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500 pulse-dot"></span>
+                    Atendimento Aberto
+                </span>
+            </div>
+
+            <div class="soft-label mx-auto mt-2"><span class="w-1.5 h-1.5 rounded-full bg-gold-500"></span> Saúde integrativa · São Mateus / ES</div>
+
+            <!-- Nome da Empresa -->
+            <h1 class="hero-title font-serif text-3xl sm:text-4xl font-bold tracking-tight text-gold-900 mt-4">
+                Instituto <span class="gold-gradient-text">Rafah</span>
+            </h1>
+
+            <!-- Nicho / Atuação -->
+            <p class="text-xs sm:text-sm font-semibold tracking-widest text-gold-600 uppercase mt-1">
+                Medicina Integrativa & Dores Crônicas
+            </p>
+
+            <!-- Slogan em Badge Elegante -->
+            <div class="mt-4 inline-block">
+                <span class="shimmer-badge text-gold-900 text-xs sm:text-sm italic font-serif px-4 py-1.5 rounded-full border border-gold-300/60 shadow-inner block">
+                    “Cuidando de você de dentro pra fora.”
+                </span>
+            </div>
+            <p class="hero-intro">Um olhar integrado para saúde, longevidade e bem-estar, reunindo diferentes áreas de cuidado em uma jornada mais acolhedora e individualizada.</p>
+        </header>
+
+        <!-- BOTÕES DE AÇÃO RÁPIDA (CTAs PRINCIPAIS) -->
+        <section class="action-section space-y-3">
+            <!-- Botão WhatsApp -->
+            <a href="https://api.whatsapp.com/send?phone=5527997587943&text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20os%20procedimentos%20do%20Rafah%2C%20poderia%20me%20ajudar%3F%20" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               class="action-card btn-gold-primary w-full py-4 px-6 rounded-2xl text-white font-semibold text-base flex items-center justify-between group">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-white/20 flex items-center justify-center backdrop-blur-sm group-hover:scale-110 transition-transform">
+                        <i class="fa-brands fa-whatsapp text-xl"></i>
+                    </div>
+                    <div class="text-left">
+                        <span class="block leading-tight">Agendar Consulta</span>
+                        <span class="text-[11px] font-normal text-white/90">Fale direto com nossa equipe via WhatsApp</span>
+                    </div>
+                </div>
+                <i class="fa-solid fa-chevron-right text-sm text-white/80 group-hover:translate-x-1 transition-transform"></i>
+            </a>
+
+            <!-- Botão Instagram -->
+            <a href="https://www.instagram.com/institutorafahsm/" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               class="action-card btn-gold-secondary w-full py-3.5 px-6 rounded-2xl text-gold-900 font-semibold text-base flex items-center justify-between group">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-gold-100 flex items-center justify-center text-gold-600 group-hover:bg-gold-200 transition-colors">
+                        <i class="fa-brands fa-instagram text-xl"></i>
+                    </div>
+                    <div class="text-left">
+                        <span class="block leading-tight">Ver Perfil no Instagram</span>
+                        <span class="text-[11px] font-normal text-gold-700/70">Acompanhe nossas novidades e conteúdos</span>
+                    </div>
+                </div>
+                <i class="fa-solid fa-arrow-up-right-from-square text-xs text-gold-500 group-hover:scale-110 transition-transform"></i>
+            </a>
+            <a href="https://chat.whatsapp.com/LM7keZ0ZMRiFfVc29rwfz8" target="_blank" rel="noopener noreferrer"
+               class="action-card w-full py-3.5 px-6 rounded-2xl bg-[#fff8eb] border border-gold-300 text-gold-900 font-semibold text-base flex items-center justify-between group hover:bg-[#fff1d6] hover:-translate-y-0.5 transition-all shadow-sm">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-gold-100 flex items-center justify-center text-gold-700 group-hover:scale-110 transition-transform">
+                        <i class="fa-brands fa-whatsapp text-xl"></i>
+                    </div>
+                    <div class="text-left">
+                        <span class="block leading-tight">Exclusive Club Rafah ✨</span>
+                        <span class="text-[11px] font-normal text-gold-700/80">Entre para a nossa comunidade</span>
+                    </div>
+                </div>
+                <i class="fa-solid fa-arrow-up-right-from-square text-xs text-gold-500"></i>
+            </a>
+        </section>
+
+        <!-- SEÇÃO DE SERVIÇOS / ESPECIALIDADES -->
+        <section class="services-section glass-card rounded-3xl p-6 sm:p-7 space-y-4">
+            <div class="section-heading flex items-center gap-2 border-b border-gold-200/60 pb-3">
+                <div class="w-8 h-8 rounded-lg bg-gold-100 flex items-center justify-center text-gold-600">
+                    <i class="fa-solid fa-stethoscope text-sm"></i>
+                </div>
+                <div>
+                    <h2 class="font-serif text-xl font-bold text-gold-900 leading-none">Nossas Especialidades</h2>
+                    <p class="text-[11px] text-gold-600">Cuidados integrativos de alta precisão</p>
+                </div>
+            </div>
+
+            <div class="service-grid grid grid-cols-1 gap-2.5">
+                <div class="service-card flex items-center gap-3 p-3 rounded-xl bg-white/70 border border-gold-100 hover:border-gold-300 transition-all"><div class="w-9 h-9 rounded-full bg-gold-50 text-gold-600 flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-heart-pulse"></i></div><div class="flex-grow"><h3 class="text-sm font-semibold text-gold-900">Medicina Integrativa, Longevidade e Nutrologia</h3><p class="text-[11px] text-stone-500">Direção: Dra. Michelle Berzin Barcellos.</p></div></div>
+                <div class="service-card flex items-center gap-3 p-3 rounded-xl bg-white/70 border border-gold-100 hover:border-gold-300 transition-all"><div class="w-9 h-9 rounded-full bg-gold-50 text-gold-600 flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-spa"></i></div><div class="flex-grow"><h3 class="text-sm font-semibold text-gold-900">Dermatologia e Medicina Estética</h3><p class="text-[11px] text-stone-500">Cuidados dermatológicos e estéticos.</p></div></div>
+                <div class="service-card flex items-center gap-3 p-3 rounded-xl bg-white/70 border border-gold-100 hover:border-gold-300 transition-all"><div class="w-9 h-9 rounded-full bg-gold-50 text-gold-600 flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-brain"></i></div><div class="flex-grow"><h3 class="text-sm font-semibold text-gold-900">Neurocirurgia e Dores Crônicas</h3><p class="text-[11px] text-stone-500">Atuação especializada em dores crônicas.</p></div></div>
+                <div class="service-card flex items-center gap-3 p-3 rounded-xl bg-white/70 border border-gold-100 hover:border-gold-300 transition-all"><div class="w-9 h-9 rounded-full bg-gold-50 text-gold-600 flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-person-running"></i></div><div class="flex-grow"><h3 class="text-sm font-semibold text-gold-900">Medicina do Esporte</h3><p class="text-[11px] text-stone-500">Acompanhamento relacionado ao movimento e desempenho.</p></div></div>
+                <div class="service-card flex items-center gap-3 p-3 rounded-xl bg-white/70 border border-gold-100 hover:border-gold-300 transition-all"><div class="w-9 h-9 rounded-full bg-gold-50 text-gold-600 flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-apple-whole"></i></div><div class="flex-grow"><h3 class="text-sm font-semibold text-gold-900">Nutrição</h3><p class="text-[11px] text-stone-500">Cuidado nutricional integrado.</p></div></div>
+                <div class="service-card flex items-center gap-3 p-3 rounded-xl bg-white/70 border border-gold-100 hover:border-gold-300 transition-all"><div class="w-9 h-9 rounded-full bg-gold-50 text-gold-600 flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-comments"></i></div><div class="flex-grow"><h3 class="text-sm font-semibold text-gold-900">Psicologia</h3><p class="text-[11px] text-stone-500">Atenção ao bem-estar emocional.</p></div></div>
+                <div class="service-card flex items-center gap-3 p-3 rounded-xl bg-white/70 border border-gold-100 hover:border-gold-300 transition-all"><div class="w-9 h-9 rounded-full bg-gold-50 text-gold-600 flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-person-yoga"></i></div><div class="flex-grow"><h3 class="text-sm font-semibold text-gold-900">Pilates e Academia</h3><p class="text-[11px] text-stone-500">Movimento e cuidado físico integrados.</p></div></div>
+            </div>
+        </section>
+
+        <!-- DIFERENCIAIS / DESTAQUES -->
+        <section class="features-section grid grid-cols-3 gap-3">
+            <div class="small-feature glass-card rounded-2xl p-3 sm:p-4 text-center">
+                <div class="w-9 h-9 mx-auto rounded-full bg-gold-100 text-gold-600 flex items-center justify-center text-sm mb-2">
+                    <i class="fa-solid fa-user-doctor"></i>
+                </div>
+                <h4 class="text-xs font-bold text-gold-900 leading-snug">Atendimento Humanizado</h4>
+                <p class="text-[10px] text-stone-500 mt-0.5">Escuta atenta e individual</p>
+            </div>
+
+            <div class="small-feature glass-card rounded-2xl p-3 sm:p-4 text-center">
+                <div class="w-9 h-9 mx-auto rounded-full bg-gold-100 text-gold-600 flex items-center justify-center text-sm mb-2">
+                    <i class="fa-solid fa-microscope"></i>
+                </div>
+                <h4 class="text-xs font-bold text-gold-900 leading-snug">Tecnologia de Ponta</h4>
+                <p class="text-[10px] text-stone-500 mt-0.5">Protocolos modernos</p>
+            </div>
+
+            <div class="small-feature glass-card rounded-2xl p-3 sm:p-4 text-center">
+                <div class="w-9 h-9 mx-auto rounded-full bg-gold-100 text-gold-600 flex items-center justify-center text-sm mb-2">
+                    <i class="fa-solid fa-shield-heart"></i>
+                </div>
+                <h4 class="text-xs font-bold text-gold-900 leading-snug">Visão Sistêmica</h4>
+                <p class="text-[10px] text-stone-500 mt-0.5">Saúde por inteiro</p>
+            </div>
+        </section>
+
+        <!-- EQUIPE / PROPOSTA DE CUIDADO -->
+        <section class="care-section glass-card rounded-3xl p-6 sm:p-7 space-y-3">
+            <div class="flex items-center gap-2 border-b border-gold-200/60 pb-3">
+                <div class="w-8 h-8 rounded-lg bg-gold-100 flex items-center justify-center text-gold-600"><i class="fa-solid fa-hands-holding-circle text-sm"></i></div>
+                <div><h2 class="font-serif text-xl font-bold text-gold-900 leading-none">Cuidado que integra</h2><p class="text-[11px] text-gold-600">Saúde, movimento e bem-estar</p></div>
+            </div>
+            <p class="text-sm text-stone-600 leading-relaxed">O Instituto Rafah reúne uma equipe multiprofissional com atuação em saúde integrativa, longevidade e bem-estar, conectando diferentes áreas de cuidado.</p>
+            <a href="https://www.instagram.com/institutorafahsm/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm font-semibold text-gold-700 hover:text-gold-900">Conheça o Instituto no Instagram <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i></a>
+        </section>
+
+        <!-- LOCALIZAÇÃO -->
+        <section class="location-section glass-card rounded-3xl p-5 sm:p-6 space-y-3">
+            <div class="flex items-start gap-3">
+                <div class="w-10 h-10 rounded-xl bg-gold-100 text-gold-600 flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="min-w-0">
+                    <h2 class="font-serif text-xl font-bold text-gold-900">Como chegar</h2>
+                    <p class="text-sm text-stone-600 mt-1">Rua Nelson Fundão, nº 295, Bairro Fátima<br>São Mateus – ES, Brasil<br>CEP: 29933-710</p>
+                </div>
+            </div>
+            <a href="https://www.google.com/maps/search/?api=1&query=Rua%20Nelson%20Fund%C3%A3o%2C%20295%2C%20Bairro%20F%C3%A1tima%2C%20S%C3%A3o%20Mateus%20-%20ES%2C%2029933-710%2C%20Brasil" target="_blank" rel="noopener noreferrer" class="btn-gold-primary w-full py-3.5 px-5 rounded-2xl text-white font-semibold text-sm flex items-center justify-center gap-2"><i class="fa-solid fa-map-location-dot"></i> Abrir localização no Google Maps <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i></a>
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="w-full max-w-lg mx-auto text-center mt-8 pt-4 border-t border-gold-200/50">
+        <p class="text-[11px] text-stone-500 leading-relaxed">
+            &copy; <span id="year">2026</span> <strong>Instituto Rafah</strong>. Todos os direitos reservados.<br>
+            <span class="text-stone-400">Medicina Integrativa & Dores Crônicas • São Mateus / ES</span>
+        </p>
+    </footer>
+
+    <!-- JavaScript para Ano Atual -->
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
